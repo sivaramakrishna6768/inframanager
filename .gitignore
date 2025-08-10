@@ -1,18 +1,17 @@
-Python
-pycache/
+# Python
+__pycache__/
 *.pyc
 .venv/
 
-Docker
+# Docker
 *.log
 
-Terraform
-*/.terraform/
+# Terraform
+**/.terraform/*
 *.tfstate
-.tfstate.
+*.tfstate.*
 crash.log
 override.tf
 override.tf.json
 *.tfvars
 .terraform.lock.hcl
-
