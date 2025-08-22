@@ -1,4 +1,4 @@
-# InfraManager — AWS Infrastructure Automation with Terraform & Docker
+# InfraManager - AWS Infrastructure Automation with Terraform & Docker
 
 A compact, well-scoped project that **provisions AWS infrastructure with Terraform** and **deploys a Dockerized Flask app** to an EC2 instance via **Amazon ECR**. It demonstrates Infrastructure‑as‑Code, containerization, and reproducible deployments without over‑engineering.
 
