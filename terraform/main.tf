@@ -55,26 +55,3 @@ resource "aws_route_table_association" "public_assoc" {
   subnet_id      = aws_subnet.public.id
   route_table_id = aws_route_table.public.id
 }
-
-# Security Group: allow HTTP (80) from anywhere. No SSH (we'll use SSM later).
-resource "aws_security_group" "web_sg" {
-  name        = "${local.project}-web-sg"
-  description = "Allow HTTP; all egress"
-  vpc_id      = aws_vpc.main.id
-  tags        = merge(local.tags, { Name = "${local.project}-web-sg" })
-
-  ingress {
-    description = "HTTP"
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-}
