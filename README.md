@@ -152,4 +152,4 @@ terraform destroy -auto-approve
 ## 👤 Author
 
 **Siva Ramakrishna Palaparthy**\
-LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/siva-ramakrishna-palaparthy)\
+LinkedIn: [www.linkedin.com/in/siva-ramakrishna-palaparthy](https://www.linkedin.com/in/siva-ramakrishna-palaparthy)\
